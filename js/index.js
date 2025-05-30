@@ -24,7 +24,7 @@ const allProjects = [
     link: "https://arxiv.org/abs/2505.14505"
   },
   {
-    title: "QUANTUM -ENHANCED CHANNEL MIXING IN RWKV M ODELS FOR TIMESERIES FORECASTING",
+    title: "Quantum-Enhanced Channel Mixing in RWKV Models for Time Series Forecasting",
     description: "This paper introduces QuantumRWKV, a hybrid quantum-classical extension of the RWKV model, replacing the feedforward network with a variational quantum circuit. Experiments on synthetic time-series tasks show quantum-enhanced performance in nonlinear or chaotic dynamics, while classical models excel in tasks with sharp discontinuities.",
     date: "2025-05-18",
     tags: "Sequence",
