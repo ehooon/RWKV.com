@@ -29,7 +29,7 @@ const allProjects = [
     date: "2025-06-17",
     tags: "Image",
     img: "images/papers-images/img-20250617-1.png",
-    link: "https://arxiv.org/abs/2506.13001"
+    link: "https://arxiv.org/abs/2506.14541"
   },
   {
     title: "Blind Identification of Collective Motion Criticality using Sequence Model Predictive Entropy Variance",
@@ -45,7 +45,7 @@ const allProjects = [
     date: "2025-06-16",
     tags: "Audio",
     img: "images/papers-images/img-20250616-1.png",
-    link: "https://arxiv.org/abs/2506.14541"
+    link: "https://arxiv.org/abs/2506.13001"
   },
   {
     title: "A Parallel Processing Architecture for Long-Term Power Load Forecasting",
