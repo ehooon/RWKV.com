@@ -1,5 +1,21 @@
 const allProjects = [
   {
+  title: "RWKV-SKF: A recurrent architecture with state-space and frequency-domain filtering for dissolved oxygen predicting and revealing influencing mechanisms",
+  description: "Based on the RWKV architecture, this study proposes the RWKV-SKF framework. By integrating state-space Kalman filtering with frequency-domain Fourier filtering, it effectively handles sensor noise and periodic dynamics to enhance dissolved oxygen prediction accuracy. Experiments demonstrate the model's superior performance and its ability to reveal key influencing mechanisms.",
+  date: "2025-12-24",
+  tags: "Time Series Forecasting",
+  img: "images/papers-images/img-20251224-1.png",
+  link: "https://www.sciencedirect.com/science/article/abs/pii/S0020025525011557"
+  },
+  {
+  title: "DME-RWKV: An Interpretable Multimodal Deep Learning Framework for Predicting Anti-VEGF Response in Diabetic Macular Edema",
+  description: "This study proposes the DME-RWKV model based on the RWKV architecture to predict anti-VEGF treatment response in patients with Diabetic Macular Edema (DME). Fusing OCT and ultra-widefield imaging with causal attention learning, the model performs excellently in biomarker segmentation and treatment response prediction, demonstrating high accuracy and interpretability.",
+  date: "2025-12-21",
+  tags: "Medical Image Analysis",
+  img: "images/papers-images/img-20251221-1.png",
+  link: "https://www.mdpi.com/2306-5354/13/1/12"
+  },
+  {
     title: "LADY: Linear Attention for Autonomous Driving Efficiency without Transformers",
     description: "This paper, based on RWKV-7 modules, proposes LADY, the first fully linear attention-based end-to-end autonomous driving model. It introduces a lightweight linear cross-attention mechanism to enable efficient cross-modal fusion while maintaining linear complexity. LADY fuses multi-frame camera and LiDAR features with constant computational and memory overhead, enabling long-range temporal context integration. Experiments on NAVSIM and Bench2Drive benchmarks show state-of-the-art performance with significantly reduced computational cost, validated on edge devices.",
     date: "2025-12-17",
@@ -38,6 +54,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251201-1.png",
     link: "https://www.sciencedirect.com/science/article/abs/pii/S1746809425018142"
+  },
+  {
+  title: "Robin: RWKV Accelerator using Block Circulant Matrices based on FPGA",
+  description: "This paper introduces Robin, a hardware-software co-design FPGA accelerator for the RWKV model. To address storage and calculation bottlenecks, it proposes Partial Block Circulant Matrices (PBCM) at the algorithm level to compress weights while maintaining accuracy. At the hardware level, it designs configurable cyclic computation cores using DSP encapsulation. Experiments show Robin achieves up to 3.09x throughput and 7.31x energy efficiency improvements compared to the Tesla A100 GPU.",
+  date: "2025-11-20",
+  tags: "AI Hardware Inference Acceleration",
+  img: "images/papers-images/img-20251120-3.png",
+  link: "https://ieeexplore.ieee.org/document/11240845"
   },
   {
     title: "AFF-UNet-RWKV: A Lightweight Model for High-Quality Deblurring in Medical Imaging",
