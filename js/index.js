@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "IESS-FusionNet: Physiologically Inspired EEG-EMG Fusion with Linear Recurrent Attention for Infantile Epileptic Spasms Syndrome Detection",
+    description: "This paper, based on RWKV architecture, proposes IESS-FusionNet for detecting Infantile Epileptic Spasms Syndrome using synchronized EEG-EMG signals. The framework features unimodal encoders with hierarchical feature extraction and a novel Cross Time-Mixing module that leverages RWKV's linear recurrent attention to model physiologically plausible, time-decaying cross-modal interactions. Evaluated on clinical data, it achieves 89.5% accuracy while reducing parameters by 60% compared to cross-attention, enabling efficient real-time deployment.",
+    date: "2025-12-31",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251231-1.png",
+    link: "https://www.mdpi.com/2306-5354/13/1/57"
+  },
+  {
   title: "RWKV-SKF: A recurrent architecture with state-space and frequency-domain filtering for dissolved oxygen predicting and revealing influencing mechanisms",
   description: "Based on the RWKV architecture, this study proposes the RWKV-SKF framework. By integrating state-space Kalman filtering with frequency-domain Fourier filtering, it effectively handles sensor noise and periodic dynamics to enhance dissolved oxygen prediction accuracy. Experiments demonstrate the model's superior performance and its ability to reveal key influencing mechanisms.",
   date: "2025-12-24",
