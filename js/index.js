@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction",
+    description: "This paper, based on RWKV, proposes MFC-RFNet, a generative framework for radar-based precipitation nowcasting that integrates multi-scale communication with guided feature fusion. The model introduces three key modules: Feature Communication Module (FCM) for bidirectional cross-scale interaction, Condition-Guided Spatial Transform Fusion (CGSTF) for aligning shallow features, and Wavelet-Guided Skip Connection (WGSC) for preserving high-frequency components. Lightweight Vision-RWKV blocks are deployed at deep stages to capture long-range spatiotemporal dependencies efficiently. Evaluations on four datasets show consistent improvements over baselines, particularly at higher rain-rate thresholds and longer lead times.",
+    date: "2026-01-07",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260107-1.png",
+    link: "https://arxiv.org/abs/2601.03633"
+  },
+  {
+    title: "Exploring Linear Attention in Underwater Image Enhancement with Retinex Theory",
+    description: "This paper, based on RWKV, proposes Retinex-RWKV, a novel framework integrating Retinex theory with RWKV's linear attention for underwater image enhancement. The approach introduces an improved R-RWKV module with SS2D-WKV scanning for global context and Omni-token shift for local features, achieving superior color restoration and detail enhancement while maintaining computational efficiency.",
+    date: "2026-01-05",
+    tags: "Image",
+    img: "images/papers-images/img-20260105-1.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6023431"
+  },
+  {
+    title: "HFRWKV: A High-Performance Fully On-Chip Hardware Accelerator for RWKV",
+    description: "This paper proposes HFRWKV, an FPGA-based hardware accelerator specifically designed for RWKV models. It introduces a novel hardware-friendly hybrid-precision quantization strategy (Δ-PoT) and reusable architectures for complex operations, combined with a fully on-chip computing system. The design eliminates memory bottlenecks through computation reordering and chunked double buffering, achieving significant throughput and energy efficiency improvements over CPU and GPU baselines.",
+    date: "2026-01-05",
+    tags: "General",
+    img: "images/papers-images/img-20260105-2.png",
+    link: "https://arxiv.org/abs/2601.02135"
+  },
+  {
     title: "IESS-FusionNet: Physiologically Inspired EEG-EMG Fusion with Linear Recurrent Attention for Infantile Epileptic Spasms Syndrome Detection",
     description: "This paper, based on RWKV architecture, proposes IESS-FusionNet for detecting Infantile Epileptic Spasms Syndrome using synchronized EEG-EMG signals. The framework features unimodal encoders with hierarchical feature extraction and a novel Cross Time-Mixing module that leverages RWKV's linear recurrent attention to model physiologically plausible, time-decaying cross-modal interactions. Evaluated on clinical data, it achieves 89.5% accuracy while reducing parameters by 60% compared to cross-attention, enabling efficient real-time deployment.",
     date: "2025-12-31",
