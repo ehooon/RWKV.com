@@ -1,5 +1,29 @@
 const allProjects = [
   {
+    title: "Hi-RWKV: Hierarchical RWKV Modeling for Hyperspectral Image Classification",
+    description: "Based on RWKV, Hi-RWKV embeds hierarchical blocks as core modules in each encoder stage. It achieves global spatial context modeling through bidirectional spatial propagation and edge-aware gating, introduces learnable band embeddings and channel mixing to enhance cross-band discriminability, and enables efficient pixel-level classification with linear complexity.",
+    date: "2026-01-12",
+    tags: "Image",
+    img: "images/papers-images/img-20260112-1.png",
+    link: "https://ieeexplore.ieee.org/document/11333959"
+  },
+  {
+    title: "EmbeddingRWKV: State-Centric Retrieval with Reusable States",
+    description: "Based on RWKV as a unified backbone for retrieval and reranking, this approach learns state representations to generate reusable states for offline caching. During reranking, only query tokens are processed, decoupling inference cost from document length and achieving 5.4×–44.8× speedup.",
+    date: "2026-01-10",
+    tags: "Language",
+    img: "images/papers-images/img-20260110-1.png",
+    link: "https://arxiv.org/abs/2601.07861"
+  },
+  {
+    title: "DyRSRNet: A Lightweight Super-Resolution Framework Based on Dynamic Recursive State-Space Networks",
+    description: "This paper introduces DyRSRNet, a lightweight super-resolution framework that embeds the DyRWKV mechanism within DyRWSSB blocks. These blocks serve as the core components of the VRSE module, effectively modeling cross-directional spatial dependencies and channel interactions to enhance texture detail restoration.",
+    date: "2026-01-09",
+    tags: "Image",
+    img: "images/papers-images/img-20260109-1.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-95-5702-8_4"
+  },
+  {
     title: "MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction",
     description: "This paper, based on RWKV, proposes MFC-RFNet, a generative framework for radar-based precipitation nowcasting that integrates multi-scale communication with guided feature fusion. The model introduces three key modules: Feature Communication Module (FCM) for bidirectional cross-scale interaction, Condition-Guided Spatial Transform Fusion (CGSTF) for aligning shallow features, and Wavelet-Guided Skip Connection (WGSC) for preserving high-frequency components. Lightweight Vision-RWKV blocks are deployed at deep stages to capture long-range spatiotemporal dependencies efficiently. Evaluations on four datasets show consistent improvements over baselines, particularly at higher rain-rate thresholds and longer lead times.",
     date: "2026-01-07",
