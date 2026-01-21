@@ -1,5 +1,77 @@
 const allProjects = [
   {
+    title: "Hi-RWKV: Hierarchical RWKV Modeling for Hyperspectral Image Classification",
+    description: "Based on RWKV, Hi-RWKV embeds hierarchical blocks as core modules in each encoder stage. It achieves global spatial context modeling through bidirectional spatial propagation and edge-aware gating, introduces learnable band embeddings and channel mixing to enhance cross-band discriminability, and enables efficient pixel-level classification with linear complexity.",
+    date: "2026-01-12",
+    tags: "Image",
+    img: "images/papers-images/img-20260112-1.png",
+    link: "https://ieeexplore.ieee.org/document/11333959"
+  },
+  {
+    title: "EmbeddingRWKV: State-Centric Retrieval with Reusable States",
+    description: "Based on RWKV as a unified backbone for retrieval and reranking, this approach learns state representations to generate reusable states for offline caching. During reranking, only query tokens are processed, decoupling inference cost from document length and achieving 5.4×–44.8× speedup.",
+    date: "2026-01-10",
+    tags: "Language",
+    img: "images/papers-images/img-20260110-1.png",
+    link: "https://arxiv.org/abs/2601.07861"
+  },
+  {
+    title: "DyRSRNet: A Lightweight Super-Resolution Framework Based on Dynamic Recursive State-Space Networks",
+    description: "This paper introduces DyRSRNet, a lightweight super-resolution framework that embeds the DyRWKV mechanism within DyRWSSB blocks. These blocks serve as the core components of the VRSE module, effectively modeling cross-directional spatial dependencies and channel interactions to enhance texture detail restoration.",
+    date: "2026-01-09",
+    tags: "Image",
+    img: "images/papers-images/img-20260109-1.png",
+    link: "https://link.springer.com/chapter/10.1007/978-981-95-5702-8_4"
+  },
+  {
+    title: "MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction",
+    description: "This paper, based on RWKV, proposes MFC-RFNet, a generative framework for radar-based precipitation nowcasting that integrates multi-scale communication with guided feature fusion. The model introduces three key modules: Feature Communication Module (FCM) for bidirectional cross-scale interaction, Condition-Guided Spatial Transform Fusion (CGSTF) for aligning shallow features, and Wavelet-Guided Skip Connection (WGSC) for preserving high-frequency components. Lightweight Vision-RWKV blocks are deployed at deep stages to capture long-range spatiotemporal dependencies efficiently. Evaluations on four datasets show consistent improvements over baselines, particularly at higher rain-rate thresholds and longer lead times.",
+    date: "2026-01-07",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260107-1.png",
+    link: "https://arxiv.org/abs/2601.03633"
+  },
+  {
+    title: "Exploring Linear Attention in Underwater Image Enhancement with Retinex Theory",
+    description: "This paper, based on RWKV, proposes Retinex-RWKV, a novel framework integrating Retinex theory with RWKV's linear attention for underwater image enhancement. The approach introduces an improved R-RWKV module with SS2D-WKV scanning for global context and Omni-token shift for local features, achieving superior color restoration and detail enhancement while maintaining computational efficiency.",
+    date: "2026-01-05",
+    tags: "Image",
+    img: "images/papers-images/img-20260105-1.png",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6023431"
+  },
+  {
+    title: "HFRWKV: A High-Performance Fully On-Chip Hardware Accelerator for RWKV",
+    description: "This paper proposes HFRWKV, an FPGA-based hardware accelerator specifically designed for RWKV models. It introduces a novel hardware-friendly hybrid-precision quantization strategy (Δ-PoT) and reusable architectures for complex operations, combined with a fully on-chip computing system. The design eliminates memory bottlenecks through computation reordering and chunked double buffering, achieving significant throughput and energy efficiency improvements over CPU and GPU baselines.",
+    date: "2026-01-05",
+    tags: "General",
+    img: "images/papers-images/img-20260105-2.png",
+    link: "https://arxiv.org/abs/2601.02135"
+  },
+  {
+    title: "IESS-FusionNet: Physiologically Inspired EEG-EMG Fusion with Linear Recurrent Attention for Infantile Epileptic Spasms Syndrome Detection",
+    description: "This paper, based on RWKV architecture, proposes IESS-FusionNet for detecting Infantile Epileptic Spasms Syndrome using synchronized EEG-EMG signals. The framework features unimodal encoders with hierarchical feature extraction and a novel Cross Time-Mixing module that leverages RWKV's linear recurrent attention to model physiologically plausible, time-decaying cross-modal interactions. Evaluated on clinical data, it achieves 89.5% accuracy while reducing parameters by 60% compared to cross-attention, enabling efficient real-time deployment.",
+    date: "2025-12-31",
+    tags: "Sequence",
+    img: "images/papers-images/img-20251231-1.png",
+    link: "https://www.mdpi.com/2306-5354/13/1/57"
+  },
+  {
+  title: "RWKV-SKF: A recurrent architecture with state-space and frequency-domain filtering for dissolved oxygen predicting and revealing influencing mechanisms",
+  description: "Based on the RWKV architecture, this study proposes the RWKV-SKF framework. By integrating state-space Kalman filtering with frequency-domain Fourier filtering, it effectively handles sensor noise and periodic dynamics to enhance dissolved oxygen prediction accuracy. Experiments demonstrate the model's superior performance and its ability to reveal key influencing mechanisms.",
+  date: "2025-12-24",
+  tags: "Sequence",
+  img: "images/papers-images/img-20251224-1.png",
+  link: "https://www.sciencedirect.com/science/article/abs/pii/S0020025525011557"
+  },
+  {
+  title: "DME-RWKV: An Interpretable Multimodal Deep Learning Framework for Predicting Anti-VEGF Response in Diabetic Macular Edema",
+  description: "This study proposes the DME-RWKV model based on the RWKV architecture to predict anti-VEGF treatment response in patients with Diabetic Macular Edema (DME). Fusing OCT and ultra-widefield imaging with causal attention learning, the model performs excellently in biomarker segmentation and treatment response prediction, demonstrating high accuracy and interpretability.",
+  date: "2025-12-21",
+  tags: "Image",
+  img: "images/papers-images/img-20251221-1.png",
+  link: "https://www.mdpi.com/2306-5354/13/1/12"
+  },
+  {
     title: "LADY: Linear Attention for Autonomous Driving Efficiency without Transformers",
     description: "This paper, based on RWKV-7 modules, proposes LADY, the first fully linear attention-based end-to-end autonomous driving model. It introduces a lightweight linear cross-attention mechanism to enable efficient cross-modal fusion while maintaining linear complexity. LADY fuses multi-frame camera and LiDAR features with constant computational and memory overhead, enabling long-range temporal context integration. Experiments on NAVSIM and Bench2Drive benchmarks show state-of-the-art performance with significantly reduced computational cost, validated on edge devices.",
     date: "2025-12-17",
@@ -38,6 +110,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251201-1.png",
     link: "https://www.sciencedirect.com/science/article/abs/pii/S1746809425018142"
+  },
+  {
+  title: "Robin: RWKV Accelerator using Block Circulant Matrices based on FPGA",
+  description: "This paper introduces Robin, a hardware-software co-design FPGA accelerator for the RWKV model. To address storage and calculation bottlenecks, it proposes Partial Block Circulant Matrices (PBCM) at the algorithm level to compress weights while maintaining accuracy. At the hardware level, it designs configurable cyclic computation cores using DSP encapsulation. Experiments show Robin achieves up to 3.09x throughput and 7.31x energy efficiency improvements compared to the Tesla A100 GPU.",
+  date: "2025-11-20",
+  tags: "Language",
+  img: "images/papers-images/img-20251120-3.png",
+  link: "https://ieeexplore.ieee.org/document/11240845"
   },
   {
     title: "AFF-UNet-RWKV: A Lightweight Model for High-Quality Deblurring in Medical Imaging",
@@ -275,7 +355,7 @@ const allProjects = [
     title: "Robotic control optimization based on receptance-weighted reinforcement learning",
     description: "This paper proposes applying an improved Recurrent Weighted Kernel Value (RWKV) neural network architecture to reinforcement learning (RL) for robotic control. The authors optimize RWKV's channel mixing module and use the modified architecture to replace the self-attention mechanism in the Decision Transformer model. By treating robotic control as a sequence modeling task, this approach leverages RWKV's efficiency. Experiments on D4RL datasets show the proposed RL RWKV model achieves higher accuracy and faster performance compared to the Decision Transformer, demonstrating its potential for low-latency, real-world robotic applications.",
     date: "2025-09-08",
-    tags: "General",
+    tags: "Sequence",
     img: "images/papers-images/img-20250908-1.png",
     link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13801/138011N/Robotic-control-optimization-based-on-receptance-weighted-reinforcement-learning/10.1117/12.3076952.short"
   },
