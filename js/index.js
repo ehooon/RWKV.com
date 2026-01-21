@@ -59,7 +59,7 @@ const allProjects = [
   title: "RWKV-SKF: A recurrent architecture with state-space and frequency-domain filtering for dissolved oxygen predicting and revealing influencing mechanisms",
   description: "Based on the RWKV architecture, this study proposes the RWKV-SKF framework. By integrating state-space Kalman filtering with frequency-domain Fourier filtering, it effectively handles sensor noise and periodic dynamics to enhance dissolved oxygen prediction accuracy. Experiments demonstrate the model's superior performance and its ability to reveal key influencing mechanisms.",
   date: "2025-12-24",
-  tags: "Time Series Forecasting",
+  tags: "Sequence",
   img: "images/papers-images/img-20251224-1.png",
   link: "https://www.sciencedirect.com/science/article/abs/pii/S0020025525011557"
   },
@@ -67,7 +67,7 @@ const allProjects = [
   title: "DME-RWKV: An Interpretable Multimodal Deep Learning Framework for Predicting Anti-VEGF Response in Diabetic Macular Edema",
   description: "This study proposes the DME-RWKV model based on the RWKV architecture to predict anti-VEGF treatment response in patients with Diabetic Macular Edema (DME). Fusing OCT and ultra-widefield imaging with causal attention learning, the model performs excellently in biomarker segmentation and treatment response prediction, demonstrating high accuracy and interpretability.",
   date: "2025-12-21",
-  tags: "Medical Image Analysis",
+  tags: "Image",
   img: "images/papers-images/img-20251221-1.png",
   link: "https://www.mdpi.com/2306-5354/13/1/12"
   },
@@ -115,7 +115,7 @@ const allProjects = [
   title: "Robin: RWKV Accelerator using Block Circulant Matrices based on FPGA",
   description: "This paper introduces Robin, a hardware-software co-design FPGA accelerator for the RWKV model. To address storage and calculation bottlenecks, it proposes Partial Block Circulant Matrices (PBCM) at the algorithm level to compress weights while maintaining accuracy. At the hardware level, it designs configurable cyclic computation cores using DSP encapsulation. Experiments show Robin achieves up to 3.09x throughput and 7.31x energy efficiency improvements compared to the Tesla A100 GPU.",
   date: "2025-11-20",
-  tags: "AI Hardware Inference Acceleration",
+  tags: "Language",
   img: "images/papers-images/img-20251120-3.png",
   link: "https://ieeexplore.ieee.org/document/11240845"
   },
@@ -355,7 +355,7 @@ const allProjects = [
     title: "Robotic control optimization based on receptance-weighted reinforcement learning",
     description: "This paper proposes applying an improved Recurrent Weighted Kernel Value (RWKV) neural network architecture to reinforcement learning (RL) for robotic control. The authors optimize RWKV's channel mixing module and use the modified architecture to replace the self-attention mechanism in the Decision Transformer model. By treating robotic control as a sequence modeling task, this approach leverages RWKV's efficiency. Experiments on D4RL datasets show the proposed RL RWKV model achieves higher accuracy and faster performance compared to the Decision Transformer, demonstrating its potential for low-latency, real-world robotic applications.",
     date: "2025-09-08",
-    tags: "General",
+    tags: "Sequence",
     img: "images/papers-images/img-20250908-1.png",
     link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13801/138011N/Robotic-control-optimization-based-on-receptance-weighted-reinforcement-learning/10.1117/12.3076952.short"
   },
