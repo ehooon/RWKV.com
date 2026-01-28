@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "A Method for Detecting Spatio-temporal Correlation Anomalies of WSN Nodes Based on Topological Information Enhancement and Time-frequency Feature Extraction",
+    description: "In the time-domain and frequency-domain feature extraction branches, a CFE module based on RWKV is embedded to process long-range dependency tasks through parallel training, reduce computational complexity, and fully extract temporal correlation features between different time modalities.",
+    date: "2026-01-17",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260117-1.png",
+    link: "https://arxiv.org/abs/2601.11951"
+  },
+  {
     title: "Hi-RWKV: Hierarchical RWKV Modeling for Hyperspectral Image Classification",
     description: "Based on RWKV, Hi-RWKV embeds hierarchical blocks as core modules in each encoder stage. It achieves global spatial context modeling through bidirectional spatial propagation and edge-aware gating, introduces learnable band embeddings and channel mixing to enhance cross-band discriminability, and enables efficient pixel-level classification with linear complexity.",
     date: "2026-01-12",
@@ -30,6 +38,22 @@ const allProjects = [
     tags: "Sequence",
     img: "images/papers-images/img-20260107-1.png",
     link: "https://arxiv.org/abs/2601.03633"
+  },
+  {
+    title: "Graph fusion model for unimodal and multimodal fake news detection",
+    description: "Based on RWKV, this study embeds the RWKV MLP-mixer into the text encoding module of the unimodal detection model CMGN, replacing traditional MLPs to capture long-range dependencies in news texts. This generates high-dimensional vectors for subsequent feature fusion, thereby improving detection accuracy.",
+    date: "2026-01-07",
+    tags: "Language",
+    img: "images/papers-images/img-20260107-2.png",
+    link: "https://rose-ibadai.repo.nii.ac.jp/records/2001365"
+  },
+  {
+    title: "Natural Cognizing Video: A Decoupling and Integration Network for General Event Boundary Captioning",
+    description: "This paper proposes a decoupling and integration network for general event boundary captioning. Utilizing RWKV layers in the event branch encoder to process video frame sequences for dynamic change modeling, it combines the parallel training advantages of Transformers with the efficient inference benefits of RNNs, thereby improving the accuracy of state description generation.",
+    date: "2026-01-06",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260106-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11329489"
   },
   {
     title: "Exploring Linear Attention in Underwater Image Enhancement with Retinex Theory",
@@ -270,6 +294,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251006-1.png",
     link: "https://ieeexplore.ieee.org/document/11192566"
+  },
+  {
+    title: "Pretrained Bi-RWKV Model",
+    description: "Based on the RWKV architecture, the Bi-RWKV model replaces the unidirectional Time Mixing module with a bidirectional version to enable bidirectional context modeling. It processes forward and backward paths in parallel, merges outputs through addition to enhance performance on natural language understanding tasks, maintains linear time complexity, and achieves a 1.95× inference speed improvement compared to Transformer models.",
+    date: "2025-10-01",
+    tags: "Language",
+    img: "images/papers-images/img-20251001-1.png",
+    link: "https://koreascience.kr/article/CFKO202533772024748.page"
   },
   {
     title: "VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing",
