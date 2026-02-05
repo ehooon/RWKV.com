@@ -1,11 +1,35 @@
 const allProjects = [
   {
+    title: "KAN We Flow? Advancing Robotic Manipulation with 3D Flow Matching via KAN & RWKV",
+    description: "This work replaces the UNet-style backbone of flow matching with an RWKV-KAN UNet. Utilizing RWKV for temporal/channel-wise task context propagation and GroupKAN spline-based feature calibration, it achieves an 86.8% parameter reduction, maintains fast inference, and attains optimal success rates in robotic manipulation.",
+    date: "2026-02-01",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260201-1.png",
+    link: "https://arxiv.org/abs/2602.01115"
+  },
+  {
+    title: "U-RWKV: Accurate and Efficient Volumetric Medical Image Segmentation via RWKV",
+    description: "This paper proposes a Tri-directional Spatial Enhancement RWKV (TSE-R) block for volumetric medical image segmentation. Utilizing RWKV for global modeling, it integrates spatial shift strategies with a tri-directional scanning mechanism, achieving 87.21% Dice score and reducing parameters by 16.08x while enhancing accuracy.",
+    date: "2026-01-23",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260123-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11360601"
+  },
+  {
     title: "A Method for Detecting Spatio-temporal Correlation Anomalies of WSN Nodes Based on Topological Information Enhancement and Time-frequency Feature Extraction",
     description: "In the time-domain and frequency-domain feature extraction branches, a CFE module based on RWKV is embedded to process long-range dependency tasks through parallel training, reduce computational complexity, and fully extract temporal correlation features between different time modalities.",
     date: "2026-01-17",
     tags: "Sequence",
     img: "images/papers-images/img-20260117-1.png",
     link: "https://arxiv.org/abs/2601.11951"
+  },
+  {
+    title: "ROSA-Tuning: Enhancing Long-Context Modeling via Suffix Matching",
+    description: "Based on RWKV-8 ROSA, this work deploys it in parallel with the attention mechanism on the CPU to identify historical positions in long contexts relevant to the current query. Retrieved information is injected into the model state in a trainable manner, significantly restoring the long-context modeling capability of window attention models and achieving performance close to global attention.",
+    date: "2026-01-14",
+    tags: "General",
+    img: "images/papers-images/img-20260114-1.png",
+    link: "https://arxiv.org/abs/2602.02499"
   },
   {
     title: "Hi-RWKV: Hierarchical RWKV Modeling for Hyperspectral Image Classification",
