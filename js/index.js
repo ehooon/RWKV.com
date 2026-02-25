@@ -1,5 +1,85 @@
 const allProjects = [
   {
+    title: "Pre-trained multi-scale RWKV-GCN for multivariate time series forecasting",
+    description: "This work proposes a two-stage framework PMSRWKV-GCN. In the first stage, after FFT preprocessing, RWKV learns clean temporal representations via self-supervised pre-training. In the second stage, GCN leverages spatial structure, improving multivariate time series forecasting performance.",
+    date: "2026-02-23",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260223-1.png",
+    link: "https://link.springer.com/article/10.1038/s41598-026-41091-4"
+  },
+  {
+    title: "Serialized PointRWKV: A Serialized RWKV-like Model Employing Feature-Based Masked Autoencoders for Point Cloud Analysis",
+    description: "This paper proposes Serialized PointRWKV, a novel RWKV extension for point cloud tasks. It designs a rotation-invariant reordering algorithm to serialize point clouds, modifies RWKV with neighborhood interpolation and global attention, and introduces feature-space MAE pre-training, achieving 95.13% and 94.6% accuracy on ScanObjectNN and ModelNet40.",
+    date: "2026-02-18",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260218-1.png",
+    link: "https://ieeexplore.ieee.org/document/11399627"
+  },
+  {
+    title: "scMix: Learning Temporal Dynamics of Gene Expression under Irregular Time Intervals",
+    description: "This work extends the RWKV architecture to propose Delta-RWKV blocks. Through Delta-Time Mixing, it incorporates time intervals Δt into the decay term, processing single-cell sequencing data with irregular time intervals to model the temporal dynamics of gene expression.",
+    date: "2026-02-15",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260215-1.png",
+    link: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btag080/8487133"
+  },
+  {
+    title: "MMSegRWKV: Enhancing Multimodal MRI Segmentation for Internet of Medical Things-Enabled Healthcare with RWKV-Inspired Architectures",
+    description: "This paper proposes MMSegRWKV, combining RWKV with a U-shaped architecture for multimodal MRI segmentation. It uses DV-WKV to model bidirectional spatio-temporal dependencies within dynamic short-time windows, and employs ResFM to explicitly model second-order cross-modal interactions, improving segmentation accuracy.",
+    date: "2026-02-06",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260206-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11373528"
+  },
+  {
+    title: "Surv-RWKV: Cross-modal receptance weighted key-value interaction with optimal transport feature alignment for survival analysis",
+    description: "This paper proposes Surv-RWKV, applying the RWKV encoder to extract features from WSI and gene pathway sequences. It introduces an optimal transport feature alignment module to map features into a shared latent space, and uses RSF and CRDI modules to dynamically model cross-modal interactions, improving survival prediction accuracy.",
+    date: "2026-02-04",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260204-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0957417426004197"
+  },
+  {
+    title: "KAN We Flow? Advancing Robotic Manipulation with 3D Flow Matching via KAN & RWKV",
+    description: "This work replaces the UNet-style backbone of flow matching with an RWKV-KAN UNet. Utilizing RWKV for temporal/channel-wise task context propagation and GroupKAN spline-based feature calibration, it achieves an 86.8% parameter reduction, maintains fast inference, and attains optimal success rates in robotic manipulation.",
+    date: "2026-02-01",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260201-1.png",
+    link: "https://arxiv.org/abs/2602.01115"
+  },
+  {
+    title: "SeisRWKV: Multi-scale Feature Interaction with Linear Complexity for Seismic Neighboring-shot Interference Mitigation",
+    description: "This work proposes SeisRWKV, which constructs multi-scale feature interaction modules using RWKV layers with co-wkv bidirectional attention mechanism for global modeling at linear complexity. It integrates an MCF module to enhance cross-channel information integration and multi-scale feature fusion, precisely suppressing neighboring-shot interference in seismic data.",
+    date: "2026-01-29",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260129-1.png",
+    link: "https://www.researchsquare.com/article/rs-8709232/v1"
+  },
+  {
+    title: "U-RWKV: Accurate and Efficient Volumetric Medical Image Segmentation via RWKV",
+    description: "This paper proposes a Tri-directional Spatial Enhancement RWKV (TSE-R) block for volumetric medical image segmentation. Utilizing RWKV for global modeling, it integrates spatial shift strategies with a tri-directional scanning mechanism, achieving 87.21% Dice score and reducing parameters by 16.08x while enhancing accuracy.",
+    date: "2026-01-23",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260123-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11360601"
+  },
+  {
+    title: "A Method for Detecting Spatio-temporal Correlation Anomalies of WSN Nodes Based on Topological Information Enhancement and Time-frequency Feature Extraction",
+    description: "In the time-domain and frequency-domain feature extraction branches, a CFE module based on RWKV is embedded to process long-range dependency tasks through parallel training, reduce computational complexity, and fully extract temporal correlation features between different time modalities.",
+    date: "2026-01-17",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260117-1.png",
+    link: "https://arxiv.org/abs/2601.11951"
+  },
+  {
+    title: "ROSA-Tuning: Enhancing Long-Context Modeling via Suffix Matching",
+    description: "Based on RWKV-8 ROSA, this work deploys it in parallel with the attention mechanism on the CPU to identify historical positions in long contexts relevant to the current query. Retrieved information is injected into the model state in a trainable manner, significantly restoring the long-context modeling capability of window attention models and achieving performance close to global attention.",
+    date: "2026-01-14",
+    tags: "General",
+    img: "images/papers-images/img-20260114-1.png",
+    link: "https://arxiv.org/abs/2602.02499"
+  },
+  {
     title: "Hi-RWKV: Hierarchical RWKV Modeling for Hyperspectral Image Classification",
     description: "Based on RWKV, Hi-RWKV embeds hierarchical blocks as core modules in each encoder stage. It achieves global spatial context modeling through bidirectional spatial propagation and edge-aware gating, introduces learnable band embeddings and channel mixing to enhance cross-band discriminability, and enables efficient pixel-level classification with linear complexity.",
     date: "2026-01-12",
@@ -30,6 +110,22 @@ const allProjects = [
     tags: "Sequence",
     img: "images/papers-images/img-20260107-1.png",
     link: "https://arxiv.org/abs/2601.03633"
+  },
+  {
+    title: "Graph fusion model for unimodal and multimodal fake news detection",
+    description: "Based on RWKV, this study embeds the RWKV MLP-mixer into the text encoding module of the unimodal detection model CMGN, replacing traditional MLPs to capture long-range dependencies in news texts. This generates high-dimensional vectors for subsequent feature fusion, thereby improving detection accuracy.",
+    date: "2026-01-07",
+    tags: "Language",
+    img: "images/papers-images/img-20260107-2.png",
+    link: "https://rose-ibadai.repo.nii.ac.jp/records/2001365"
+  },
+  {
+    title: "Natural Cognizing Video: A Decoupling and Integration Network for General Event Boundary Captioning",
+    description: "This paper proposes a decoupling and integration network for general event boundary captioning. Utilizing RWKV layers in the event branch encoder to process video frame sequences for dynamic change modeling, it combines the parallel training advantages of Transformers with the efficient inference benefits of RNNs, thereby improving the accuracy of state description generation.",
+    date: "2026-01-06",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260106-1.png",
+    link: "https://ieeexplore.ieee.org/abstract/document/11329489"
   },
   {
     title: "Exploring Linear Attention in Underwater Image Enhancement with Retinex Theory",
@@ -270,6 +366,14 @@ const allProjects = [
     tags: "Image",
     img: "images/papers-images/img-20251006-1.png",
     link: "https://ieeexplore.ieee.org/document/11192566"
+  },
+  {
+    title: "Pretrained Bi-RWKV Model",
+    description: "Based on the RWKV architecture, the Bi-RWKV model replaces the unidirectional Time Mixing module with a bidirectional version to enable bidirectional context modeling. It processes forward and backward paths in parallel, merges outputs through addition to enhance performance on natural language understanding tasks, maintains linear time complexity, and achieves a 1.95× inference speed improvement compared to Transformer models.",
+    date: "2025-10-01",
+    tags: "Language",
+    img: "images/papers-images/img-20251001-1.png",
+    link: "https://koreascience.kr/article/CFKO202533772024748.page"
   },
   {
     title: "VRWKV-Editor: Reducing quadratic complexity in transformer-based video editing",
