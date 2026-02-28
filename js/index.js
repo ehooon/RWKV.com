@@ -1,5 +1,13 @@
 const allProjects = [
   {
+    title: "A high-performance defect detection for titanium strip via receptance weighted key value architecture-inspired context modeling and hierarchical differential fusion",
+    description: "This paper proposes RHD-Net, introducing a C2-RWKV module inspired by the RWKV architecture for titanium strip defect detection. It reconstructs RWKV's time and channel mixing units as 2D spatial-channel mixing units, achieving selective dynamic accumulation of image features with linear complexity, and uses BDFM and HAFM modules for multi-scale and elongated defect detection.",
+    date: "2026-02-24",
+    tags: "Image",
+    img: "images/papers-images/img-20260224-1.png",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0952197626003799"
+  },
+  {
     title: "Pre-trained multi-scale RWKV-GCN for multivariate time series forecasting",
     description: "This work proposes a two-stage framework PMSRWKV-GCN. In the first stage, after FFT preprocessing, RWKV learns clean temporal representations via self-supervised pre-training. In the second stage, GCN leverages spatial structure, improving multivariate time series forecasting performance.",
     date: "2026-02-23",
