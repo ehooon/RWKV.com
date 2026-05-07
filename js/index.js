@@ -1,5 +1,61 @@
 const allProjects = [
   {
+    "title": "Spec-RWKV: A Spectrum-Guided Multi-Scale Recurrent Modeling Framework for Multi-Center Resting-State fMRI-Assisted Diagnosis",
+    "description": "This paper proposes Spec-RWKV, a spectrum-guided multi-scale recurrent modeling framework for multi-center resting-state fMRI-assisted diagnosis. Based on RWKV architecture, it explicitly models physical sampling intervals and jointly coordinates temporal-spectral information across scales, showing competitive performance on ABIDE-I and ADHD-200 datasets with robustness to TR perturbations.",
+    "date": "2026-04-24",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260424-1.png",
+    "link": "https://www.mdpi.com/2076-3425/16/5/455"
+  },
+  {
+    "title": "HA-ViTNet: Dual-Domain Collaborative Learning for Semantic Segmentation of High-Resolution Remote Sensing Images",
+    "description": "This paper proposes HA-ViTNet, a dual-domain collaborative framework for high-resolution remote sensing image segmentation. It designs Spatial RWKV Attention Block to simulate temporal dependencies within spatial sequences for pseudo-temporal modeling, feeding global context back into spatial stream to balance local detail preservation and global semantic understanding.",
+    "date": "2026-04-21",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260421-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11461799"
+  },
+  {
+    "title": "Enhance Deformation-Tolerant Unsupervised Infrared and Visible Image Fusion via Hybrid Feature Representation Learning",
+    "description": "This paper proposes a deformation-tolerant infrared and visible image fusion method. It designs a dynamic hybrid encoder combining CNN adaptive weight features with Vision-RWKV variant model to achieve feature abstraction from local feature perception to global context modeling, with high-precision multi-scale feature alignment through implicit feature-level alignment decoder.",
+    "date": "2026-04-21",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260421-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11463142"
+  },
+  {
+    "title": "Trifusion-RWKV for Complex Degradation Restoration in Library and Archive Environments",
+    "description": "This paper proposes TriFusion-RWKV for library and archive image restoration. The core Fusion-RWKV module contains three parallel branches: frequency-adaptive branch for illumination correction, multi-scale dilated attention branch for blur suppression, and dynamic LUT branch for color restoration, refined by RWKV-style gating and feed-forward networks, achieving 23.99dB PSNR with only 9.17M parameters.",
+    "date": "2026-04-20",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260420-1.png",
+    "link": "https://fyust.edu.cn/gjhyqk/cscwd2026/papers/paper_589.pdf"
+  },
+  {
+    "title": "PestVL-Net: Enabling Multimodal Pest Learning via Fine-grained Vision-Language Interaction",
+    "description": "This paper presents PestVL-Net, a novel vision-language framework for pest recognition that utilizes RWKV architecture in the visual pathway with saliency-guided adaptive window partitioning to model fine-grained visual characteristics of pests. Combined with MLLM priors and multimodal Chain-of-Thought reasoning, it enables fine-grained multimodal pest learning.",
+    "date": "2026-04-19",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260419-1.png",
+    "link": "https://arxiv.org/abs/2604.17278"
+  },
+  {
+    "title": "RWKV4Rec: RWKV-Based Personalized Sequential Recommendation Model",
+    "description": "This paper proposes RWKV4Rec, the first application of RWKV to sequential recommendation tasks. It leverages RWKV's efficient long-sequence processing capability and linear computational complexity, designing item-RWKV block module and Low-Rank TimeMix based on LoRA technology to adaptively assign weights to historical items, achieving 1.80-3.76% improvements in NDCG@10 on four benchmark datasets.",
+    "date": "2026-04-18",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260418-1.png",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3810245"
+  },
+  {
+    "title": "Multigrain-aware Semantic Prototype Scanning and Tri-Token Prompt Learning Embraced High-Order RWKV for Pan-Sharpening",
+    "description": "This paper proposes a multigrain-aware semantic prototype scanning method for pan-sharpening built upon high-order RWKV architecture. It introduces semantic-driven scanning strategy using locality-sensitive hashing to construct multigrain semantic prototypes for context-aware token reordering, combined with tri-token prompt learning mechanism to enhance global interaction consistency.",
+    "date": "2026-04-16",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260416-1.png",
+    "link": "https://arxiv.org/abs/2604.14622"
+  },
+  {
     "title": "RICEFuse: Robust Infrared and Color Image Fusion framework",
     "description": "This paper proposes the RICEFuse robust infrared and color image fusion framework, embedding RWKV as a sequence feature extraction module in the image feature decoding branch, enhancing long-distance feature dependency modeling capabilities and improving image fusion quality and robustness.",
     "date": "2026-04-06",
