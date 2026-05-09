@@ -56,7 +56,7 @@ const allProjects = [
     "link": "https://arxiv.org/abs/2604.14622"
   },
   {
-    "title": "RICEFuse: Robust Infrared and Color Image Fusion framework",
+    "title": "RICEFuse: A RWKV-based information complementarity enhancement network for infrared-visible image fusion",
     "description": "This paper proposes the RICEFuse robust infrared and color image fusion framework, embedding RWKV as a sequence feature extraction module in the image feature decoding branch, enhancing long-distance feature dependency modeling capabilities and improving image fusion quality and robustness.",
     "date": "2026-04-06",
     "tags": "Image",
@@ -80,7 +80,7 @@ const allProjects = [
     "link": "https://arxiv.org/abs/2603.27261"
   },
   {
-    "title": "A novel TV-FEM-RWKV-TS model for time series prediction",
+    "title": "A novel TV-FEM-RWKV-TS hybrid framework for aging prediction of PEMFCs under static and quasi-dynamic conditions",
     "description": "This paper proposes the TV-FEM-RWKV-TS time series prediction model, embedding RWKV modules into the time series prediction backbone network, combined with finite element method to decompose temporal features, improving long-term time series prediction accuracy and reducing computational complexity.",
     "date": "2026-03-26",
     "tags": "Sequence",
@@ -88,7 +88,7 @@ const allProjects = [
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0360319926012255"
   },
   {
-    "title": "MMCGR: Multi-Modal Contrastive Graph Reasoning framework",
+    "title": "MMCGR: A multimodal cascaded gated fusion RWKV-based model for emotion recognition in conversations",
     "description": "This paper proposes the MMCGR multi-modal contrastive graph reasoning framework, using RWKV as a sequence encoder embedded in the multi-modal feature processing branch, enhancing cross-modal temporal correlation modeling capabilities and improving inference accuracy for multi-modal tasks.",
     "date": "2026-03-26",
     "tags": "General",
