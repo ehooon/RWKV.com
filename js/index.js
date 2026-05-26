@@ -1,5 +1,37 @@
 const allProjects = [
   {
+    title: "FRWKV+: Adaptive Periodic-Position Branch Interaction for Frequency-Space Linear Time Series Forecasting",
+    description: "This paper proposes FRWKV+, an enhanced frequency-space time series forecasting model based on RWKV architecture. It introduces cross-branch gates to exchange contexts between real and imaginary frequency streams, and employs Adaptive PhaseGate mechanism with trust-controlled signed corrections for selective periodic-position interaction, achieving largest MSE winner coverage among FRWKV-family variants in matched-seed evaluations.",
+    date: "2026-05-15",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260515-1.png",
+    link: "https://arxiv.org/abs/2605.15690"
+  },
+  {
+    title: "SCRWKV: Ultra-Compact Structure-Calibrated Vision-RWKV for Topological Crack Segmentation",
+    description: "This paper proposes SCRWKV, an ultra-compact structure-calibrated Vision-RWKV network for topological crack segmentation. The Structure-Field Encoder backbone integrates Adaptive Multi-scale Cascaded Modulator for texture enhancement and Structure-Calibrated Insight Unit with Geometry-guided Bidirectional Structure Transformation to capture topological correlations, achieving F1 score of 0.8428 with only 1.22M parameters on TUT dataset.",
+    date: "2026-05-14",
+    tags: "Image",
+    img: "images/papers-images/img-20260514-1.png",
+    link: "https://arxiv.org/abs/2605.14926"
+  },
+  {
+    title: "Wavelet-Decoupled Spatiotemporal Network for Stock Return Prediction",
+    description: "This paper proposes WaveDSTN, a wavelet-decoupled spatiotemporal network for stock return prediction. It leverages wavelet transformation to decompose stock returns into high-frequency (short-term fluctuations) and low-frequency (long-term trends) components, and incorporates Dual-Path Spatiotemporal Encoder to capture temporal dependencies and cross-stock information propagation while preserving causal structure.",
+    date: "2026-05-07",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260507-1.png",
+    link: "https://www.mdpi.com/1099-4300/28/5/548"
+  },
+  {
+    title: "Rapid and High-Accuracy Three-Dimensional Airborne Transient Electromagnetic Forward Modeling Based on Machine Learning",
+    description: "This paper proposes a deep learning approach for rapid and high-accuracy 3D airborne transient electromagnetic (ATEM) forward modeling. Based on RWKV architecture, it employs bidirectional weighted key value (Bi-WKV) mechanism to capture geometric relationships and structural continuity in 3D geoelectric distributions with linear complexity, and introduces transceiver altitude modulation mechanism to handle altitude-induced variations, achieving fast modeling under 1s with high precision.",
+    date: "2026-04-29",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260429-1.png",
+    link: "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025JH001181"
+  },
+  {
     "title": "Spec-RWKV: A Spectrum-Guided Multi-Scale Recurrent Modeling Framework for Multi-Center Resting-State fMRI-Assisted Diagnosis",
     "description": "This paper proposes Spec-RWKV, a spectrum-guided multi-scale recurrent modeling framework for multi-center resting-state fMRI-assisted diagnosis. Based on RWKV architecture, it explicitly models physical sampling intervals and jointly coordinates temporal-spectral information across scales, showing competitive performance on ABIDE-I and ADHD-200 datasets with robustness to TR perturbations.",
     "date": "2026-04-24",
