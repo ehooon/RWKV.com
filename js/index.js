@@ -1,6 +1,126 @@
 const allProjects = [
   {
-    "title": "RICEFuse: Robust Infrared and Color Image Fusion framework",
+    "title": "TemLo: Temporal-Local Synergy Enhanced RWKV for Audio-Visual Segmentation",
+    "description": "This paper proposes TemLo, a temporal-local synergy enhanced RWKV framework for audio-visual segmentation. It introduces modality-specific RWKV encoders that capture salient spatial and temporal dynamics within each stream to reduce intra-modal noise and ambiguity, designs Acoustic Modulation Pyramid to facilitate structured audio-visual interactions at multiple spatiotemporal scales enriching visual representations with audio-aware semantics, and proposes Vision-guided Modality Injector for temporally consistent and semantically aligned reasoning, establishing new state-of-the-art on AVS benchmarks with absolute improvements of 10.28% in MJ and 3.66% in MF on MS3 dataset when employing PVT-v2 backbone.",
+    "date": "2026-05-18",
+    "tags": "General",
+    "img": "images/papers-images/img-20260518-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11523565"
+  },
+  {
+    title: "FRWKV+: Adaptive Periodic-Position Branch Interaction for Frequency-Space Linear Time Series Forecasting",
+    description: "This paper proposes FRWKV+, an enhanced frequency-space time series forecasting model based on RWKV architecture. It introduces cross-branch gates to exchange contexts between real and imaginary frequency streams, and employs Adaptive PhaseGate mechanism with trust-controlled signed corrections for selective periodic-position interaction, achieving largest MSE winner coverage among FRWKV-family variants in matched-seed evaluations.",
+    date: "2026-05-15",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260515-1.png",
+    link: "https://arxiv.org/abs/2605.15690"
+  },
+  {
+    "title": "C2F-VRWKV: A Lightweight Clustering-Aware and Cross-Frequency-Enhanced Vision-RWKV Network for Ship Detection in Remote Sensing Scenarios",
+    "description": "This paper proposes C2F-VRWKV, a lightweight clustering-aware and cross-frequency-enhanced Vision-RWKV network for efficient ship detection in remote sensing imagery. The C2-VRWKV backbone incorporates contextual clustering mechanism to aggregate local fine-grained morphological features within linear-complexity scanning paradigm, the cross-frequency fusion module employs frequency-guided cross-attention strategy to emphasize ship contours while suppressing environmental noise, and the dual-stream multifrequency attention module separates foreground ship features from background clutter using prior-guided mechanism, achieving 78.23% mAP with only 0.53M parameters on Airbus-Ship dataset.",
+    "date": "2026-05-14",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260514-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11520379"
+  },
+  {
+    title: "SCRWKV: Ultra-Compact Structure-Calibrated Vision-RWKV for Topological Crack Segmentation",
+    description: "This paper proposes SCRWKV, an ultra-compact structure-calibrated Vision-RWKV network for topological crack segmentation. The Structure-Field Encoder backbone integrates Adaptive Multi-scale Cascaded Modulator for texture enhancement and Structure-Calibrated Insight Unit with Geometry-guided Bidirectional Structure Transformation to capture topological correlations, achieving F1 score of 0.8428 with only 1.22M parameters on TUT dataset.",
+    date: "2026-05-14",
+    tags: "Image",
+    img: "images/papers-images/img-20260514-1.png",
+    link: "https://arxiv.org/abs/2605.14926"
+  },
+  {
+    title: "Wavelet-Decoupled Spatiotemporal Network for Stock Return Prediction",
+    description: "This paper proposes WaveDSTN, a wavelet-decoupled spatiotemporal network for stock return prediction. It leverages wavelet transformation to decompose stock returns into high-frequency (short-term fluctuations) and low-frequency (long-term trends) components, and incorporates Dual-Path Spatiotemporal Encoder to capture temporal dependencies and cross-stock information propagation while preserving causal structure.",
+    date: "2026-05-07",
+    tags: "Sequence",
+    img: "images/papers-images/img-20260507-1.png",
+    link: "https://www.mdpi.com/1099-4300/28/5/548"
+  },
+  {
+    title: "Rapid and High-Accuracy Three-Dimensional Airborne Transient Electromagnetic Forward Modeling Based on Machine Learning",
+    description: "This paper proposes a deep learning approach for rapid and high-accuracy 3D airborne transient electromagnetic (ATEM) forward modeling. Based on RWKV architecture, it employs bidirectional weighted key value (Bi-WKV) mechanism to capture geometric relationships and structural continuity in 3D geoelectric distributions with linear complexity, and introduces transceiver altitude modulation mechanism to handle altitude-induced variations, achieving fast modeling under 1s with high precision.",
+    date: "2026-04-29",
+    tags: "3D/4D",
+    img: "images/papers-images/img-20260429-1.png",
+    link: "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025JH001181"
+  },
+  {
+    "title": "Spec-RWKV: A Spectrum-Guided Multi-Scale Recurrent Modeling Framework for Multi-Center Resting-State fMRI-Assisted Diagnosis",
+    "description": "This paper proposes Spec-RWKV, a spectrum-guided multi-scale recurrent modeling framework for multi-center resting-state fMRI-assisted diagnosis. Based on RWKV architecture, it explicitly models physical sampling intervals and jointly coordinates temporal-spectral information across scales, showing competitive performance on ABIDE-I and ADHD-200 datasets with robustness to TR perturbations.",
+    "date": "2026-04-24",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260424-1.png",
+    "link": "https://www.mdpi.com/2076-3425/16/5/455"
+  },
+  {
+    "title": "HA-ViTNet: Dual-Domain Collaborative Learning for Semantic Segmentation of High-Resolution Remote Sensing Images",
+    "description": "This paper proposes HA-ViTNet, a dual-domain collaborative framework for high-resolution remote sensing image segmentation. It designs Spatial RWKV Attention Block to simulate temporal dependencies within spatial sequences for pseudo-temporal modeling, feeding global context back into spatial stream to balance local detail preservation and global semantic understanding.",
+    "date": "2026-04-21",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260421-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11461799"
+  },
+  {
+    "title": "Enhance Deformation-Tolerant Unsupervised Infrared and Visible Image Fusion via Hybrid Feature Representation Learning",
+    "description": "This paper proposes a deformation-tolerant infrared and visible image fusion method. It designs a dynamic hybrid encoder combining CNN adaptive weight features with Vision-RWKV variant model to achieve feature abstraction from local feature perception to global context modeling, with high-precision multi-scale feature alignment through implicit feature-level alignment decoder.",
+    "date": "2026-04-21",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260421-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11463142"
+  },
+  {
+    "title": "DCAF: Dynamic Affective Consistency-Aware Fusion with Disentangled Modality Representations for Multimodal Sentiment Analysis",
+    "description": "This paper proposes DCAF (Dynamic Affective Consistency-Aware Fusion) framework addressing modality gaps and affective conflicts in multimodal sentiment analysis. It employs Cross-modal Orthogonal Decoupling Learning (CODL) with Trimodal Cross-Attention mechanism and supervised contrastive objectives to bridge modality gaps, and designs Consistency-guided Unimodal Label Derivation (CULD) under dual-plane geometric constraints to mitigate intra-sample affective conflicts, achieving SOTA results on three benchmarks via RWKV's linear efficiency.",
+    "date": "2026-04-20",
+    "tags": "Language",
+    "img": "images/papers-images/img-20260420-2.png",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0925231226010520"
+  },
+  {
+    "title": "Trifusion-RWKV for Complex Degradation Restoration in Library and Archive Environments",
+    "description": "This paper proposes TriFusion-RWKV for library and archive image restoration. The core Fusion-RWKV module contains three parallel branches: frequency-adaptive branch for illumination correction, multi-scale dilated attention branch for blur suppression, and dynamic LUT branch for color restoration, refined by RWKV-style gating and feed-forward networks, achieving 23.99dB PSNR with only 9.17M parameters.",
+    "date": "2026-04-20",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260420-1.png",
+    "link": "https://fyust.edu.cn/gjhyqk/cscwd2026/papers/paper_589.pdf"
+  },
+  {
+    "title": "PestVL-Net: Enabling Multimodal Pest Learning via Fine-grained Vision-Language Interaction",
+    "description": "This paper presents PestVL-Net, a novel vision-language framework for pest recognition that utilizes RWKV architecture in the visual pathway with saliency-guided adaptive window partitioning to model fine-grained visual characteristics of pests. Combined with MLLM priors and multimodal Chain-of-Thought reasoning, it enables fine-grained multimodal pest learning.",
+    "date": "2026-04-19",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260419-1.png",
+    "link": "https://arxiv.org/abs/2604.17278"
+  },
+  {
+    "title": "RWKV4Rec: RWKV-Based Personalized Sequential Recommendation Model",
+    "description": "This paper proposes RWKV4Rec, the first application of RWKV to sequential recommendation tasks. It leverages RWKV's efficient long-sequence processing capability and linear computational complexity, designing item-RWKV block module and Low-Rank TimeMix based on LoRA technology to adaptively assign weights to historical items, achieving 1.80-3.76% improvements in NDCG@10 on four benchmark datasets.",
+    "date": "2026-04-18",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260418-1.png",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3810245"
+  },
+  {
+    "title": "Multigrain-aware Semantic Prototype Scanning and Tri-Token Prompt Learning Embraced High-Order RWKV for Pan-Sharpening",
+    "description": "This paper proposes a multigrain-aware semantic prototype scanning method for pan-sharpening built upon high-order RWKV architecture. It introduces semantic-driven scanning strategy using locality-sensitive hashing to construct multigrain semantic prototypes for context-aware token reordering, combined with tri-token prompt learning mechanism to enhance global interaction consistency.",
+    "date": "2026-04-16",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260416-1.png",
+    "link": "https://arxiv.org/abs/2604.14622"
+  },
+  {
+    "title": "PHMRNet: Persistent Homology Based Mamba-RWKV Network for LiDAR Place Recognition",
+    "description": "This paper proposes PHMRNet, a persistent homology-based Mamba-RWKV network for LiDAR place recognition. It integrates topological information extracted by persistent homology as topology-aware sampling channels to compensate for geometric details lost in 2D range view projection, and introduces spatiotemporal fusion module to link topological and RV features across consecutive frames for improved spatiotemporal consistency, significantly enhancing descriptor robustness on public datasets.",
+    "date": "2026-04-13",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260413-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11480752"
+  },
+  {
+    "title": "RICEFuse: A RWKV-based information complementarity enhancement network for infrared-visible image fusion",
     "description": "This paper proposes the RICEFuse robust infrared and color image fusion framework, embedding RWKV as a sequence feature extraction module in the image feature decoding branch, enhancing long-distance feature dependency modeling capabilities and improving image fusion quality and robustness.",
     "date": "2026-04-06",
     "tags": "Image",
@@ -24,7 +144,7 @@ const allProjects = [
     "link": "https://arxiv.org/abs/2603.27261"
   },
   {
-    "title": "A novel TV-FEM-RWKV-TS model for time series prediction",
+    "title": "A novel TV-FEM-RWKV-TS hybrid framework for aging prediction of PEMFCs under static and quasi-dynamic conditions",
     "description": "This paper proposes the TV-FEM-RWKV-TS time series prediction model, embedding RWKV modules into the time series prediction backbone network, combined with finite element method to decompose temporal features, improving long-term time series prediction accuracy and reducing computational complexity.",
     "date": "2026-03-26",
     "tags": "Sequence",
@@ -32,7 +152,7 @@ const allProjects = [
     "link": "https://www.sciencedirect.com/science/article/abs/pii/S0360319926012255"
   },
   {
-    "title": "MMCGR: Multi-Modal Contrastive Graph Reasoning framework",
+    "title": "MMCGR: A multimodal cascaded gated fusion RWKV-based model for emotion recognition in conversations",
     "description": "This paper proposes the MMCGR multi-modal contrastive graph reasoning framework, using RWKV as a sequence encoder embedded in the multi-modal feature processing branch, enhancing cross-modal temporal correlation modeling capabilities and improving inference accuracy for multi-modal tasks.",
     "date": "2026-03-26",
     "tags": "General",
