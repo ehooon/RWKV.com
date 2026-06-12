@@ -1,5 +1,21 @@
 const allProjects = [
   {
+    "title": "PLM-NIDS: A Protocol-Language Model for Network Intrusion Detection from Raw Packet Sequences Using RWKV State-Space Models",
+    "description": "This paper presents PLM-NIDS, a protocol-language model approach for network intrusion detection without deep packet inspection. It treats network flows as a language whose grammar is written entirely in L3/L4 packet metadata (length, inter-arrival time, TTL, TCP flags, hashed ports) and employs RWKV-4 state-space models to learn benign traffic structure from 344K unlabelled flows, achieving PR-AUC of 0.93 in zero-shot attack separation via per-flow perplexity scoring. The RWKV backbone's O(T) recurrent inference enables per-packet streaming at line rate without flow buffering while remaining inherently encryption-agnostic to TLS 1.3, QUIC, and future encrypted protocols.",
+    "date": "2026-05-29",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260529-1.png",
+    "link": "https://arxiv.org/abs/2606.00155"
+  },
+  {
+    "title": "SANet: Structure-Aware Deep Unfolding Network for Face Super-Resolution with Global-Local Modeling",
+    "description": "This paper proposes SANet, a structure-aware deep unfolding framework for face super-resolution that formulates face reconstruction as an explicit optimization problem and unfolds its iterative solution into an interpretable deep neural network. It embeds a structure-aware RWKV-based proximal operator leveraging linear-complexity architecture for efficient global context modeling within the unfolding stages, and designs a structure-aware deformable shift mechanism that dynamically adjusts spatial aggregation patterns based on facial structure to preserve fine-grained facial geometry details, outperforming state-of-the-art methods on benchmark datasets in both quantitative metrics and visual quality.",
+    "date": "2026-05-27",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260527-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11536060"
+  },
+  {
     "title": "TemLo: Temporal-Local Synergy Enhanced RWKV for Audio-Visual Segmentation",
     "description": "This paper proposes TemLo, a temporal-local synergy enhanced RWKV framework for audio-visual segmentation. It introduces modality-specific RWKV encoders that capture salient spatial and temporal dynamics within each stream to reduce intra-modal noise and ambiguity, designs Acoustic Modulation Pyramid to facilitate structured audio-visual interactions at multiple spatiotemporal scales enriching visual representations with audio-aware semantics, and proposes Vision-guided Modality Injector for temporally consistent and semantically aligned reasoning, establishing new state-of-the-art on AVS benchmarks with absolute improvements of 10.28% in MJ and 3.66% in MF on MS3 dataset when employing PVT-v2 backbone.",
     "date": "2026-05-18",
