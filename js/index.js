@@ -1,5 +1,109 @@
 const allProjects = [
   {
+    "title": "ASSCG: Just-Right Gating over Chattering for Fast-Slow LLM Planning in Autonomous Driving",
+    "description": "ASSCG builds an RWKV-based slow-system control gate for fast-slow autonomous-driving planners. It treats LLM invocation as sequential Query, Cache, or Drop decisions, reducing latency while improving closed-loop planning.",
+    "date": "2026-06-24",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260624-1.png",
+    "link": "https://arxiv.org/abs/2606.25509"
+  },
+  {
+    "title": "Neural Events: Discrete Asynchronous Autoencoders for Event-Based Vision",
+    "description": "Neural Events uses RWKV-7 inside a discrete asynchronous encoder. RWKV recursively updates local memory and produces per-event logits, which are quantized into neural events to compress event streams while preserving precise timing.",
+    "date": "2026-06-18",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260618-1.png",
+    "link": "https://arxiv.org/abs/2606.19835"
+  },
+  {
+    "title": "Synergizing Global Pattern Learning and Time Order Characterization in Mobile Channel Prediction: An RWKV-Based Approach",
+    "description": "This paper uses RWKV as the backbone for mobile channel prediction. Its interleaved architecture learns multi-scale global channel patterns, while exponential decay encodes temporal order and causal dynamics for robust prediction.",
+    "date": "2026-06-15",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260615-2.png",
+    "link": "https://arxiv.org/abs/2606.16170"
+  },
+  {
+    "title": "RWKV-CVM: Gated Cross-Variate Mixing for Multivariate Power Load Forecasting",
+    "description": "RWKV-CVM extends RWKV-TS with a lightweight gated cross-variate mixing module. It selectively injects correlated variables such as weather and neighboring load zones while preserving the RWKV backbone's linear-time efficiency.",
+    "date": "2026-06-15",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260615-1.png",
+    "link": "https://www.mdpi.com/2673-4826/7/2/58"
+  },
+  {
+    "title": "Random shuffle high-order RWKV for pan-sharpening",
+    "description": "This paper builds a high-order random-shuffle pan-sharpening framework on vision RWKV. Random shuffle and inverse shuffle reduce directional bias in 2D dependency modeling, while WKV sharing and high-order channel mixing improve remote-sensing image fusion.",
+    "date": "2026-06-10",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260610-4.png",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1566253526004239"
+  },
+  {
+    "title": "EGGROLL-IPO: Pluralistic Alignment via Decentralised Post-Training with Population Preferences",
+    "description": "EGGROLL-IPO uses RWKV-7G 10.1B as the base policy for decentralized EGGROLL post-training. It introduces Online IPO loss as each worker's scalar fitness signal, so population preferences can guide RWKV policy updates more stably.",
+    "date": "2026-06-10",
+    "tags": "General",
+    "img": "images/papers-images/img-20260610-3.png",
+    "link": "https://openreview.net/forum?id=5P7ihyDNi8"
+  },
+  {
+    "title": "Degradation-Aware Blind Light-Field Image Quality Assessment With Linear Attention",
+    "description": "This work uses parameter-shared RWKV modules to model long-range spatial and angular dependencies in blind light-field image quality assessment, after estimating microlens reliability maps to suppress local degradation effects.",
+    "date": "2026-06-10",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260610-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11557154"
+  },
+  {
+    "title": "Benchmarking Neural Speech Compression from a Rate-Distortion Perspective",
+    "description": "ECC uses Conv-RWKV Mixture blocks for neural speech compression: CNN branches capture local time-frequency patterns, RWKV branches model long-range speech dependencies, and entropy-constrained optimization improves low-bitrate rate-distortion performance.",
+    "date": "2026-06-10",
+    "tags": "Audio",
+    "img": "images/papers-images/img-20260610-1.png",
+    "link": "https://arxiv.org/abs/2606.11631"
+  },
+  {
+    "title": "Efficient RWKV-based Representation Learning for 3D Point Clouds",
+    "description": "This paper designs P-RWKV and PointER to transfer RWKV-style sequence modeling to 3D point cloud representation learning. Local perception expansion and spatial context enhancement adapt RWKV to irregular geometry while reducing computation and latency.",
+    "date": "2026-06-09",
+    "tags": "3D/4D",
+    "img": "images/papers-images/img-20260609-1.png",
+    "link": "https://arxiv.org/abs/2606.10395"
+  },
+  {
+    "title": "PathRWKV: Enhancing Whole Slide Image Inference with Asymmetric Recurrent Modeling",
+    "description": "PathRWKV builds a whole-slide pathology model on RWKV. Its asymmetric recurrent design enables parallel training and constant-memory inference, while positional encoding and multi-task learning improve long-sequence, multi-scale WSI modeling.",
+    "date": "2026-06-08",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260608-2.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11554093"
+  },
+  {
+    "title": "Fast and effective prediction of spatiotemporal nonlinear dynamics using the tailored RWKV architecture",
+    "description": "This paper tailors RWKV for spatiotemporal nonlinear dynamics prediction, using its linear-complexity sequence modeling to learn multimode-fiber pulse propagation and capture long-range temporal-spatial dependencies with efficient inference.",
+    "date": "2026-06-08",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260608-1.png",
+    "link": "https://iopscience.iop.org/article/10.1088/2515-7647/ae79be/meta"
+  },
+  {
+    "title": "PLM-NIDS: A Protocol-Language Model for Network Intrusion Detection from Raw Packet Sequences Using RWKV State-Space Models",
+    "description": "This paper presents PLM-NIDS, a protocol-language model approach for network intrusion detection without deep packet inspection. It treats network flows as a language whose grammar is written entirely in L3/L4 packet metadata (length, inter-arrival time, TTL, TCP flags, hashed ports) and employs RWKV-4 state-space models to learn benign traffic structure from 344K unlabelled flows, achieving PR-AUC of 0.93 in zero-shot attack separation via per-flow perplexity scoring. The RWKV backbone's O(T) recurrent inference enables per-packet streaming at line rate without flow buffering while remaining inherently encryption-agnostic to TLS 1.3, QUIC, and future encrypted protocols.",
+    "date": "2026-05-29",
+    "tags": "Sequence",
+    "img": "images/papers-images/img-20260529-1.png",
+    "link": "https://arxiv.org/abs/2606.00155"
+  },
+  {
+    "title": "SANet: Structure-Aware Deep Unfolding Network for Face Super-Resolution with Global-Local Modeling",
+    "description": "This paper proposes SANet, a structure-aware deep unfolding framework for face super-resolution that formulates face reconstruction as an explicit optimization problem and unfolds its iterative solution into an interpretable deep neural network. It embeds a structure-aware RWKV-based proximal operator leveraging linear-complexity architecture for efficient global context modeling within the unfolding stages, and designs a structure-aware deformable shift mechanism that dynamically adjusts spatial aggregation patterns based on facial structure to preserve fine-grained facial geometry details, outperforming state-of-the-art methods on benchmark datasets in both quantitative metrics and visual quality.",
+    "date": "2026-05-27",
+    "tags": "Image",
+    "img": "images/papers-images/img-20260527-1.png",
+    "link": "https://ieeexplore.ieee.org/abstract/document/11536060"
+  },
+  {
     "title": "TemLo: Temporal-Local Synergy Enhanced RWKV for Audio-Visual Segmentation",
     "description": "This paper proposes TemLo, a temporal-local synergy enhanced RWKV framework for audio-visual segmentation. It introduces modality-specific RWKV encoders that capture salient spatial and temporal dynamics within each stream to reduce intra-modal noise and ambiguity, designs Acoustic Modulation Pyramid to facilitate structured audio-visual interactions at multiple spatiotemporal scales enriching visual representations with audio-aware semantics, and proposes Vision-guided Modality Injector for temporally consistent and semantically aligned reasoning, establishing new state-of-the-art on AVS benchmarks with absolute improvements of 10.28% in MJ and 3.66% in MF on MS3 dataset when employing PVT-v2 backbone.",
     "date": "2026-05-18",
